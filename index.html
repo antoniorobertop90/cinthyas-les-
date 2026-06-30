@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cinthya S&atilde;les | Advogada Especialista | Direito de Fam&iacute;lia e Criminal</title>
+    
+    <meta name="description" content="Advocacia especializada em Direito Criminal, Fam&iacute;lia, Invent&aacute;rios, Contratos e Desbloqueio Banc&aacute;rio em Dom Pedro - MA. Atendimento &aacute;gil e estrat&eacute;gico.">
+    <meta name="keywords" content="advogada Dom Pedro MA, advogada Cinthya Sales, desbloqueio de conta banc&aacute;ria judicial, pens&atilde;o aliment&iacute;cia, div&oacute;rcio, direito criminal, invent&aacute;rio de bens, escrit&oacute;rio de advocacia Maranh&atilde;o">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cinthyasalesadv.com.br"> 
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cinthya S&atilde;les | Advogada Especialista">
+    <meta property="og:description" content="Solu&ccedil;&otilde;es jur&iacute;dicas estrat&eacute;gicas em Direito Criminal, Fam&iacute;lia, Contratos e Desbloqueio de Contas com atendimento online e presencial.">
+    <meta property="og:site_name" content="Cinthya S&atilde;les Advocacia">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='80'%3E%E2%9A%96%EF%B8%8F%3C/text%3E%3C/svg%3E">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --verde-profundo: #2C4A3E; 
+            --verde-claro: #E8EFE9;     
+            --verde-medio: #3E6B58;     
+            --vinho-profundo: #3D0C1D;  
+            --vinho-accent: #5C162E;    
+            --ouro-antigo: #C19A6B;     
+            --texto-claro: #F9F9F9;
+            --texto-escuro: #2A2A2A;
+            --fundo-pagina: #F4F6F4;    
+            --fundo-cards: #FFFFFF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html { scroll-behavior: smooth; scroll-padding-top: 90px; } 
+        body { font-family: 'Montserrat', sans-serif; color: var(--texto-escuro); background-color: var(--fundo-pagina); line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        a { text-decoration: none; transition: all 0.3s ease; }
+
+        /* HEADER */
+        header {
+            position: fixed; width: 100%; top: 0; z-index: 1000;
+            background: var(--verde-claro); 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            border-bottom: 2px solid var(--verde-profundo);
+        }
+        .nav-container { 
+            max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; 
+            display: flex; justify-content: space-between; align-items: center; 
+        }
+        
+        .logo-text { 
+            font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; 
+            color: var(--verde-profundo); display: flex; align-items: center; 
+        }
+        
+        nav ul { list-style: none; display: flex; gap: 2.5rem; }
+        nav a { color: var(--verde-profundo); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        nav a:hover { color: var(--vinho-accent); } 
+        
+        .btn-header { 
+            background-color: transparent; color: var(--verde-profundo); border: 2px solid var(--verde-profundo); 
+            padding: 0.6rem 1.5rem; font-weight: 700; font-size: 0.85rem; border-radius: 4px;
+        }
+        .btn-header:hover { background-color: var(--verde-profundo); color: var(--texto-claro); }
+
+        /* HERO */
+        .hero { 
+            background: linear-gradient(135deg, var(--vinho-profundo) 0%, var(--verde-profundo) 100%); 
+            height: 100vh; display: flex; align-items: center; justify-content: center; 
+            text-align: center; color: var(--texto-claro); padding: 0 2rem; 
+            border-bottom: 4px solid var(--ouro-antigo); 
+        }
+        .hero h1 { font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2; }
+        .hero h1 span { color: var(--ouro-antigo); font-style: italic; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2.5rem; color: #E0E6E2; max-width: 800px; font-weight: 300; }
+        .btn-primary { 
+            display: inline-block; background-color: var(--ouro-antigo); color: var(--vinho-profundo); 
+            padding: 1.1rem 2.8rem; font-size: 1.1rem; font-weight: 700; 
+            text-transform: uppercase; border-radius: 4px; letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .btn-primary:hover { transform: translateY(-3px); background-color: #d1ab7d; box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+
+        /* FAIXA ROTATIVA */
+        .faixa-rotativa {
+            background-color: var(--vinho-profundo);
+            color: var(--ouro-antigo);
+            padding: 14px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            display: flex;
+            border-bottom: 2px solid var(--ouro-antigo);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+        }
+        .faixa-conteudo {
+            display: inline-block;
+            animation: deslizar 25s linear infinite;
+        }
+        .faixa-conteudo span { padding: 0 25px; }
+        @keyframes deslizar { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        /* SOBRE */
+        .about-section { display: flex; align-items: center; gap: 4rem; padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; }
+        .about-image { flex: 1; border-radius: 4px; overflow: hidden; border: 3px solid var(--ouro-antigo); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .about-image img { width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 4/5; object-position: top; }
+        .about-content { flex: 1; }
+        .about-content h2 { font-size: 2.5rem; color: var(--verde-profundo); margin-bottom: 0.5rem; }
+        .about-content h3 { font-size: 1rem; color: var(--ouro-antigo); margin-bottom: 1.5rem; font-family: 'Montserrat', sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .about-content p { margin-bottom: 1.2rem; color: var(--texto-escuro); text-align: justify; font-size: 0.95rem; }
+
+        /* ESPECIALIDADES */
+        .services { padding: 6rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 4rem; }
+        .section-header h2 { font-size: 2.5rem; color: var(--verde-profundo); }
+        .linha-dourada { width: 60px; height: 3px; background-color: var(--ouro-antigo); margin: 12px auto 0; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        
+        .service-card { 
+            background-color: var(--fundo-cards); padding: 2.5rem 2rem; border-radius: 4px; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.03); border-top: 4px solid var(--verde-profundo); 
+            transition: all 0.3s ease; 
+        }
+        .service-card:hover { transform: translateY(-5px); border-top-color: var(--ouro-antigo); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+        .service-card h3 { font-size: 1.3rem; color: var(--verde-profundo); margin-bottom: 1rem; font-weight: 600; }
+        .service-card p { font-size: 0.9rem; color: #4A4A4A; text-align: justify; }
+
+        /* DESBLOQUEIO DE CONTA */
+        .desbloqueio-section {
+            background: linear-gradient(135deg, var(--verde-profundo) 0%, #1e332b 100%);
+            padding: 6rem 2rem;
+            border-top: 3px solid var(--ouro-antigo);
+            border-bottom: 3px solid var(--ouro-antigo);
+        }
+        .desbloqueio-inner { max-width: 1100px; margin: 0 auto; }
+        .desbloqueio-section .section-header h2 { color: var(--texto-claro); }
+        .desbloqueio-section .section-header p { color: #cedbd3; max-width: 700px; margin: 1.2rem auto 0; font-size: 1rem; font-weight: 300; }
+        .desbloqueio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3.5rem; }
+        .desbloqueio-card {
+            background: rgba(255,255,255,0.05); border: 1px solid rgba(193, 154, 107, 0.25);
+            border-left: 4px solid var(--ouro-antigo); padding: 2.2rem 1.8rem; border-radius: 4px; transition: all 0.3s ease;
+        }
+        .desbloqueio-card:hover { background: rgba(255,255,255,0.09); transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+        .desbloqueio-card h3 { color: var(--ouro-antigo); font-size: 1.15rem; margin-bottom: 0.8rem; font-weight: 600; }
+        .desbloqueio-card p { color: #d0ded5; font-size: 0.9rem; line-height: 1.7; text-align: justify; }
+        
+        .desbloqueio-destaque { margin-top: 3.5rem; background: rgba(193, 154, 107, 0.1); border: 1px solid var(--ouro-antigo); border-radius: 4px; padding: 2rem 2.5rem; text-align: center; }
+        .desbloqueio-destaque h3 { color: var(--ouro-antigo); font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .desbloqueio-destaque p { color: #e2ede7; font-size: 0.95rem; }
+        
+        .btn-desbloqueio {
+            display: inline-block; margin-top: 3rem; background-color: var(--ouro-antigo); color: var(--vinho-profundo);
+            padding: 1rem 2.5rem; font-weight: 700; font-size: 1rem; border-radius: 4px; text-transform: uppercase;
+            letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .btn-desbloqueio:hover { background-color: #d1ab7d; transform: translateY(-3px); }
+
+        /* CONTATO DIRETO */
+        .cta-section { background: var(--vinho-profundo); color: var(--texto-claro); text-align: center; padding: 6rem 2rem; border-top: 2px solid var(--ouro-antigo); }
+        .cta-section h2 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .cta-section p { color: #e0d0d5; font-size: 1rem; margin-bottom: 2rem; font-weight: 300; }
+        
+        .whatsapp-form { margin-top: 2.5rem; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+        .whatsapp-select { 
+            padding: 1rem; font-size: 1rem; border-radius: 4px; border: none; 
+            width: 100%; max-width: 400px; font-family: 'Montserrat', sans-serif;
+            color: var(--texto-escuro); background-color: white; outline: none;
+            cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); font-weight: 500;
+        }
+        .btn-whatsapp-form {
+            background-color: #25D366; color: #fff; padding: 1.1rem 3rem; 
+            font-weight: 700; border-radius: 50px; border: none; cursor: pointer;
+            font-size: 1rem; transition: all 0.3s ease; font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+        .btn-whatsapp-form:hover { background-color: #1EBE5D; transform: translateY(-3px); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5); }
+
+        /* RODAPÉ */
+        .footer-legal { background-color: #0d1210; color: #7f8c85; text-align: center; padding: 4rem 2rem; font-size: 0.8rem; line-height: 1.7; border-top: 1px solid #1a2420; }
+        .footer-legal p { margin-bottom: 12px; max-width: 900px; margin-left: auto; margin-right: auto; }
+        .footer-legal .oab-destaque { color: var(--ouro-antigo); font-weight: 600; font-size: 0.95rem; margin-bottom: 20px; letter-spacing: 1px; }
+
+        /* BANNER DE COOKIES LGPD */
+        .cookie-banner {
+            position: fixed; bottom: 0; left: 0; width: 100%;
+            background-color: var(--verde-profundo); color: var(--texto-claro);
+            padding: 15px 20px; text-align: center; font-size: 0.85rem;
+            display: none; justify-content: center; align-items: center; gap: 20px;
+            z-index: 9999; box-shadow: 0 -4px 15px rgba(0,0,0,0.15);
+        }
+        .btn-cookie {
+            background-color: var(--ouro-antigo); color: var(--vinho-profundo); border: none;
+            padding: 8px 22px; font-weight: 700; border-radius: 4px; cursor: pointer; text-transform: uppercase; font-size: 0.75rem;
+        }
+        .btn-cookie:hover { background-color: #d1ab7d; }
+
+        /* RESPONSIVIDADE MOBILE */
+        @media (max-width: 768px) {
+            nav ul { display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; margin: 1rem 0; }
+            .nav-container { flex-direction: column; padding: 1rem; text-align: center; }
+            .logo-text { justify-content: center; font-size: 1.3rem; }
+            .btn-header { width: 100%; max-width: 280px; padding: 0.6rem; }
+            .hero h1 { font-size: 2.2rem; margin-top: 80px; }
+            .hero p { font-size: 1rem; }
+            .about-section { flex-direction: column; padding: 4rem 1.5rem; gap: 2.5rem; }
+            .cookie-banner { flex-direction: column; text-align: center; gap: 12px; padding: 20px; }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Attorney",
+      "name": "Cinthya S\u00e3les Advocacia",
+      "image": "https://cinthyasalesadv.com.br/foto-cinthya.jpg",
+      "telephone": "+55-99-98406-4678",
+      "email": "contato@cinthyasalesadv.com.br",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dom Pedro",
+        "addressRegion": "MA",
+        "addressCountry": "BR"
+      },
+      "oabNumber": "OAB/MA 24.852-A",
+      "description": "Advocacia especializada em Direito Criminal, Fam\u00edlia, Contratos e Desbloqueio Judicial de Contas Banc\u00e1rias.",
+      "knowsAbout": ["Direito de Fam\u00edlia", "Direito Criminal", "Invent\u00e1rio", "Contratos", "Bloqueio Judicial Sisbajud"]
+    }
+    </script>
+</head>
+<body>
+
+    <header role="banner">
+        <div class="nav-container">
+            <a href="#" class="logo-text" title="Cinthya S&atilde;les Advocacia Home">Cinthya S&atilde;les</a>
+            <nav role="navigation" aria-label="Menu Principal">
+                <ul>
+                    <li><a href="#sobre">Advogada</a></li>
+                    <li><a href="#atuacao">Especialidades</a></li>
+                    <li><a href="#desbloqueio">Desbloqueio de Conta</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="#contato" class="btn-header">Agendar Consulta</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Apresenta&ccedil;&atilde;o Institucional">
+            <div class="hero-content">
+                <h1>Estrat&eacute;gia, &Eacute;tica e <br><span>Resultados Jur&iacute;dicos</span></h1>
+                <p>Atendimento especializado e focado na prote&ccedil;&atilde;o imediata da sua liberdade, do seu patrim&ocirc;nio e dos direitos da sua fam&iacute;lia.</p>
+                <a href="#contato" class="btn-primary">Falar com a Advogada</a>
+            </div>
+        </section>
+
+        <div class="faixa-rotativa" aria-hidden="true">
+            <div class="faixa-conteudo">
+                <span>DIREITO CRIMINAL &bull; DIREITO DE FAM&Iacute;LIA &bull; INVENT&Aacute;RIO COMPARTILHADO &bull; CONTRATOS &bull; DESBLOQUEIO DE CONTA BANC&Aacute;RIA &bull; ATENDIMENTO ONLINE &bull; </span>
+                <span>DIREITO CRIMINAL &bull; DIREITO DE FAM&Iacute;LIA &bull; INVENT&Aacute;RIO COMPARTILHADO &bull; CONTRATOS &bull; DESBLOQUEIO DE CONTA BANC&Aacute;RIA &bull; ATENDIMENTO ONLINE &bull; </span>
+            </div>
+        </div>
+
+        <section id="sobre" class="about-section" aria-label="Sobre a Advogada">
+            <div class="about-image">
+                <img src="foto-cinthya.jpg" alt="Dra. Cinthya S&atilde;les, Advogada Especialista no Maranh&atilde;o">
+            </div>
+            <div class="about-content">
+                <h2>Cinthya S&atilde;les</h2>
+                <h3>Advogada | OAB/MA 24.852-A</h3>
+                <p>Com uma atua&ccedil;&atilde;o firmada nos pilares da &eacute;tica, sigilo profissional e transpar&ecirc;ncia absoluta, ofere&ccedil;o solu&ccedil;&otilde;es jur&iacute;dicas de alta performance para a resolu&ccedil;&atilde;o de conflitos complexos.</p>
+                <p>Especializada em proteger os interesses individuais de cada cliente, meu compromisso &eacute; entregar defesas t&eacute;cnicas robustas e aconselhamento estrat&eacute;gico personalizado, seja de forma presencial ou por meio de atendimento 100% digital com total seguran&ccedil;a jur&iacute;dica.</p>
+            </div>
+        </section>
+
+        <section id="atuacao" class="services" aria-label="&Aacute;reas de Atua&ccedil;&atilde;o Jur&iacute;dica">
+            <div class="section-header">
+                <h2>&Aacute;reas de Atua&ccedil;&atilde;o Especializada</h2>
+                <div class="linha-dourada"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Direito Criminal</h3>
+                    <p>Defesa t&eacute;cnica rigorosa em inqu&eacute;ritos policiais e processos penais. Atua&ccedil;&atilde;o emergencial e estrat&eacute;gica em delegacias, pedidos de liberdade, habeas corpus, audi&ecirc;ncias de cust&oacute;dia e sustenta&ccedil;&otilde;es orais, garantindo o cumprimento integral das garantias constitucionais do defendido.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Direito de Fam&iacute;lia</h3>
+                    <p>Media&ccedil;&atilde;o e judicializa&ccedil;&atilde;o humanizada de conflitos familiares. Especialista em a&ccedil;&otilde;es de fixa&ccedil;&atilde;o, revis&atilde;o e execu&ccedil;&atilde;o de pens&atilde;o aliment&iacute;cia, regulamenta&ccedil;&atilde;o de guarda compartilhada ou unilateral, aliena&ccedil;&atilde;o parental, div&oacute;rcio consensual ou litigioso, e uni&atilde;o est&aacute;vel.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Invent&aacute;rio e Sucess&otilde;es</h3>
+                    <p>Planejamento e resolu&ccedil;&atilde;o &aacute;gil de heran&ccedil;as e partilha de bens, minimizando os desgastes emocionais e financeiros dos herdeiros. Atua&ccedil;&atilde;o qualificada em invent&aacute;rios judiciais complexos e invent&aacute;rios extrajudiciais diretamente em cart&oacute;rio.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Contratos Jur&iacute;dicos</h3>
+                    <p>Elabora&ccedil;&atilde;o, an&aacute;lise minuciosa e revis&atilde;o de contratos civis e comerciais (compra e venda, loca&ccedil;&atilde;o, presta&ccedil;&atilde;o de servi&ccedil;os). Foco absoluto na mitiga&ccedil;&atilde;o de riscos financeiros e na inser&ccedil;&atilde;o de cl&aacute;usulas de seguran&ccedil;a jur&iacute;dica protetiva.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Direito Civil</h3>
+                    <p>A&ccedil;&otilde;es de repara&ccedil;&atilde;o de danos, responsabilidade civil, cobran&ccedil;as, execu&ccedil;&otilde;es e assessoria em lit&iacute;gios gerais que envolvam o patrim&ocirc;nio e as rela&ccedil;&otilde;es civis, sempre buscando resolu&ccedil;&otilde;es c&eacute;leres e ben&eacute;ficas.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Sal&aacute;rio-Maternidade e Previdenci&aacute;rio</h3>
+                    <p>Orienta&ccedil;&atilde;o e requerimento de benef&iacute;cios previdenci&aacute;rios junto ao INSS, com forte atua&ccedil;&atilde;o na garantia do sal&aacute;rio-maternidade para trabalhadoras urbanas e rurais, assegurando os direitos fundamentais da m&atilde;e e do rec&eacute;m-nascido.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="desbloqueio" class="desbloqueio-section" aria-label="Servi&ccedil;o de Desbloqueio de Conta">
+            <div class="desbloqueio-inner">
+                <div class="section-header">
+                    <h2>Desbloqueio de Conta Banc&aacute;ria</h2>
+                    <div class="linha-dourada"></div>
+                    <p>Sua conta foi surpreendida por uma restri&ccedil;&atilde;o financeira? Atuamos com car&aacute;ter de urg&ecirc;ncia m&aacute;xima para reverter medidas abusivas e liberar o acesso aos seus recursos essenciais.</p>
+                </div>
+
+                <div class="desbloqueio-grid">
+                    <div class="desbloqueio-card">
+                        <h3>Bloqueio por Ordem Judicial</h3>
+                        <p>Medidas originadas por execu&ccedil;&otilde;es fiscais, trabalhistas ou c&iacute;veis. Analisamos o processo de origem imediatamente para ingressar com as defesas adequadas visando a libera&ccedil;&atilde;o dos valores fixados indevidamente.</p>
+                    </div>
+                    <div class="desbloqueio-card">
+                        <h3>Bloqueio Administrativo Banc&aacute;rio</h3>
+                        <p>Restri&ccedil;&otilde;es unilaterais impostas pelas institui&ccedil;&otilde;es financeiras sob alega&ccedil;&atilde;o de suspeita de fraude, pend&ecirc;ncias de documentos ou seguran&ccedil;a. Atuamos administrativamente e judicialmente para cessar o abuso.</p>
+                    </div>
+                    <div class="desbloqueio-card">
+                        <h3>Atendimento de Urg&ecirc;ncia</h3>
+                        <p>Sabemos que o bloqueio de ativos paralisa a subsist&ecirc;ncia de fam&iacute;lias e a opera&ccedil;&atilde;o de neg&oacute;cios. Por essa raz&atilde;o, este servi&ccedil;o possui triagem priorit&aacute;ria em nosso escrit&oacute;rio.</p>
+                    </div>
+                    <div class="desbloqueio-card">
+                        <h3>SISBAJUD e Penhora Online</h3>
+                        <p>Defesa t&eacute;cnica especializada contra constri&ccedil;&otilde;es eletr&ocirc;nicas em excesso de execu&ccedil;&atilde;o ou que incidam sobre valores impenhor&aacute;veis, buscando o imediato levantamento da penhora.</p>
+                    </div>
+                    <div class="desbloqueio-card">
+                        <h3>Prote&ccedil;&atilde;o do Sal&aacute;rio e Benef&iacute;cios</h3>
+                        <p>A legisla&ccedil;&atilde;o brasileira protege verbas de natureza estritamente alimentar. Garantimos a defesa de sal&aacute;rios, proventos de aposentadoria, poupan&ccedil;a at&eacute; 40 sal&aacute;rios m&iacute;nimos e benef&iacute;cios contra reten&ccedil;&otilde;es ilegais.</p>
+                    </div>
+                    <div class="desbloqueio-card">
+                        <h3>Empresas e Pessoas Jur&iacute;dicas</h3>
+                        <p>A&ccedil;&otilde;es voltadas a resguardar o capital de giro, pagamento de folha de funcion&aacute;rios e a pr&oacute;pria continuidade da atividade empresarial que esteja amea&ccedil;ada por bloqueios intempestivos.</p>
+                    </div>
+                </div>
+
+                <div class="desbloqueio-destaque">
+                    <h3>Seguran&ccedil;a e Agilidade Jur&iacute;dica</h3>
+                    <p>O bloqueio inesperado exige uma resposta jur&iacute;dica t&eacute;cnica imediata. Com a pe&ccedil;a jur&iacute;dica correta e a comprova&ccedil;&atilde;o da impenhorabilidade ou nulidade, &eacute; vi&aacute;vel restabelecer a normalidade de sua vida financeira.</p>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="#contato" class="btn-desbloqueio">Solicitar An&aacute;lise de Bloqueio</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="cta-section" aria-label="Formul&aacute;rio de Atendimento Direct">
+            <h2>Proteja Seus Direitos Hoje Mesmo</h2>
+            <p>Selecione a &aacute;rea jur&iacute;dica correspondente &agrave; sua necessidade para darmos in&iacute;cio ao seu atendimento direcionado.</p>
+            
+            <div class="whatsapp-form">
+                <select id="area-interesse" class="whatsapp-select" aria-label="Selecione o assunto da consulta jur&iacute;dica">
+                    <option value="" disabled selected>Escolha o assunto da consulta...</option>
+                    <option value="Direito Criminal">Direito Criminal (Defesa/Cust&oacute;dia)</option>
+                    <option value="Direito Civil">Direito Civil / Danos morais e materiais</option>
+                    <option value="Contratos">An&aacute;lise ou Elabora&ccedil;&atilde;o de Contratos</option>
+                    <option value="Sal&aacute;rio Maternidade">Sal&aacute;rio Maternidade / Previdenci&aacute;rio</option>
+                    <option value="Pens&atilde;o e Guarda">Pens&atilde;o Aliment&iacute;cia / Guarda de Menores</option>
+                    <option value="Direito de Fam&iacute;lia">Direito de Fam&iacute;lia (Div&oacute;rcio/Uni&atilde;o Est&aacute;vel)</option>
+                    <option value="Invent&aacute;rio">Invent&aacute;rio de Bens e Heran&ccedil;a</option>
+                    <option value="Desbloqueio de Conta Banc&aacute;ria">Desbloqueio Urgente de Conta Banc&aacute;ria</option>
+                </select>
+                <button onclick="enviarWhatsApp()" class="btn-whatsapp-form">Falar com a Advogada no WhatsApp</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-legal" role="contentinfo">
+        <p class="oab-destaque">Cinthya S&atilde;les | Advogada Especialista | OAB/MA 24.852-A</p>
+        <p>Este site institucional tem car&aacute;ter meramente informativo, pautando sua atua&ccedil;&atilde;o estritamente em conformidade com o C&oacute;digo de &Eacute;tica e Disciplina da Ordem dos Advogados do Brasil (OAB). N&atilde;o realiza capta&ccedil;&atilde;o il&iacute;cita de clientes ou publicidade abusiva.</p>
+        <p>Os conte&uacute;dos e informa&ccedil;&otilde;es aqui dispostos n&atilde;o configuram consulta jur&iacute;dica formal. Para an&aacute;lises de casos concretos, agende um atendimento individualizado.</p>
+        <p>&copy; 2026 Cinthya S&atilde;les Advocacia. Todos os direitos reservados. | Escrit&oacute;rio de Atendimento | Dom Pedro - MA</p>
+    </footer>
+
+    <div id="cookie-aviso" class="cookie-banner" role="dialog" aria-live="polite">
+        <span>Utilizamos cookies t&eacute;cnicos essenciais para assegurar a melhor experi&ecirc;ncia de navega&ccedil;&atilde;o em nosso site, em conformidade com a LGPD.</span>
+        <button class="btn-cookie" onclick="aceitarCookies()">Aceitar e Fechar</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (!localStorage.getItem('cookiesAceitos')) {
+                document.getElementById('cookie-aviso').style.display = 'flex';
+            }
+        });
+
+        function aceitarCookies() {
+            localStorage.setItem('cookiesAceitos', 'sim');
+            document.getElementById('cookie-aviso').style.display = 'none';
+        }
+
+        function enviarWhatsApp() {
+            const area = document.getElementById('area-interesse').value;
+            const telefone = "5599984064678"; 
+            
+            if (!area) {
+                // Tratamento seguro de caractere especial no JS
+                alert("Por favor, selecione uma \u00e1rea de interesse na lista antes de prosseguir com o agendamento.");
+                return;
+            }
+            
+            // Tratamento seguro de caractere especial no JS
+            const mensagem = `Ol\u00e1, Dra. Cinthya S\u00e3les! Gostaria de realizar o agendamento de uma consulta jur\u00eddica. Meu caso est\u00e1 relacionado a: *${area}*.`;
+            const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+            
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+    </script>
+
+</body>
+</html>
