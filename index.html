@@ -184,7 +184,7 @@
         }
         .btn-whatsapp-form:hover { background-color: #1EBE5D; transform: translateY(-3px); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5); }
 
-        /* RODAPÉ */
+        /* RODAPÃ‰ */
         .footer-legal { background-color: #0d1210; color: #7f8c85; text-align: center; padding: 4rem 2rem; font-size: 0.8rem; line-height: 1.7; border-top: 1px solid #1a2420; }
         .footer-legal p { margin-bottom: 12px; max-width: 900px; margin-left: auto; margin-right: auto; }
         .footer-legal .oab-destaque { color: var(--ouro-antigo); font-weight: 600; font-size: 0.95rem; margin-bottom: 20px; letter-spacing: 1px; }
@@ -203,14 +203,43 @@
         }
         .btn-cookie:hover { background-color: #d1ab7d; }
 
-        /* RESPONSIVIDADE MOBILE */
+        /* RESPONSIVIDADE MOBILE CORRIGIDA */
         @media (max-width: 768px) {
-            nav ul { display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; margin: 1rem 0; }
-            .nav-container { flex-direction: column; padding: 1rem; text-align: center; }
-            .logo-text { justify-content: center; font-size: 1.3rem; }
-            .btn-header { width: 100%; max-width: 280px; padding: 0.6rem; }
-            .hero h1 { font-size: 2.2rem; margin-top: 80px; }
+            header {
+                position: fixed;
+                height: auto;
+            }
+            .nav-container { 
+                flex-direction: column; 
+                padding: 0.5rem; 
+                text-align: center; 
+                gap: 0.5rem;
+            }
+            .logo-text { justify-content: center; font-size: 1.2rem; }
+            nav ul { 
+                display: flex; 
+                flex-direction: row; 
+                flex-wrap: wrap;    
+                justify-content: center;
+                gap: 1rem; 
+                width: 100%; 
+                margin: 0.3rem 0; 
+            }
+            nav a {
+                font-size: 0.75rem; 
+            }
+            .btn-header { width: auto; max-width: 280px; padding: 0.4rem 1.2rem; font-size: 0.75rem; }
+            
+            /* ESSA REGRA IMPEDE O MENU DE COBRIR O TEXTO DO HERO */
+            .hero {
+                height: auto;
+                min-height: 100vh;
+                padding-top: 220px; 
+                padding-bottom: 3rem;
+            }
+            .hero h1 { font-size: 2.2rem; }
             .hero p { font-size: 1rem; }
+            
             .about-section { flex-direction: column; padding: 4rem 1.5rem; gap: 2.5rem; }
             .cookie-banner { flex-direction: column; text-align: center; gap: 12px; padding: 20px; }
         }
@@ -341,7 +370,7 @@
                     </div>
                     <div class="desbloqueio-card">
                         <h3>Prote&ccedil;&atilde;o do Sal&aacute;rio e Benef&iacute;cios</h3>
-                        <p>A legisla&ccedil;&atilde;o brasileira protege verbas de natureza estritamente alimentar. Garantimos a defesa de sal&aacute;rios, proventos de aposentadoria, poupan&ccedil;a at&eacute; 40 sal&aacute;rios m&iacute;nimos e benef&iacute;cios contra reten&ccedil;&otilde;es ilegais.</p>
+                        <p>A legisla&ccedil;&atilde;o brasileira protege verbas de natureza estritamente alimentar. Garantimos a defense de sal&aacute;rios, proventos de aposentadoria, poupan&ccedil;a at&eacute; 40 sal&aacute;rios m&iacute;nimos e benef&iacute;cios contra reten&ccedil;&otilde;es ilegais.</p>
                     </div>
                     <div class="desbloqueio-card">
                         <h3>Empresas e Pessoas Jur&iacute;dicas</h3>
@@ -410,12 +439,10 @@
             const telefone = "5599984064678"; 
             
             if (!area) {
-                // Tratamento seguro de caractere especial no JS
                 alert("Por favor, selecione uma \u00e1rea de interesse na lista antes de prosseguir com o agendamento.");
                 return;
             }
             
-            // Tratamento seguro de caractere especial no JS
             const mensagem = `Ol\u00e1, Dra. Cinthya S\u00e3les! Gostaria de realizar o agendamento de uma consulta jur\u00eddica. Meu caso est\u00e1 relacionado a: *${area}*.`;
             const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
             
